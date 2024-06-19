@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon</title>
+
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-12 header-custom">
+                <img class="img-size-custom" src="/logo/Symbol-Pokemon-Logo-removebg-preview.png" alt="Pokemon-logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class=" main-custom ">
+                <div class="searchBar">
+                    <div class="InputContainer">
+                        <input placeholder="Enter Pokemon name:" id="SearchPokemon" class="input" name="text" type="text">
+                    </div>
+                    <button id="btnfetch" class="button">
+                        <span class="span"><img src="/logo/pokemon_Ball-removebg-preview.png" class="ball"></span>
+                    </button>                
+                </div>
+                <div class="PokemonImage">
+                    <div class="Information">
+                        <h1 class="errorInput"></h1>
+                        <h1 class="pokemonName"></h1>
+                        <div class="Resources"> 
+                            <div class="Abilities" style="display: none;">
+                                <h5>Abilities:</h5>
+                                    <p class="Ability2"></p>
+                                    <p class="Ability1"></p>
+                            </div>
+                            <div class="Type" style="display: none;">
+                                <h5>Type:</h5>
+                                <p class="Type1"></p>
+                                <p class="Type2"></p>
+                            </div>
+                            <!-- <div class="Height" style="display: none;">
+                                <h5>Height:</h5>
+                                <p class="HeightPokemon"></p>
+                            </div>
+                            <div class="Weight" style="display: none;">
+                                <h5>Weight:</h5>
+                                <p class="weigthPokemon"></p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="pokemonImage">
+                        <img src="" alt="Pokemonfront" id="pokemonfront" style="display:none;">
+                        <img src="" alt="Pokemonback" id="pokemonback" style="display: none;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
