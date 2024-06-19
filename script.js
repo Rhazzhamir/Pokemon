@@ -7,7 +7,7 @@ btnfetch.addEventListener('click', async function() {
         if (!response.ok) {
             throw new Error("Invalid Pokemon Name!");
         }
-        const data = await response.json();
+        const data = await response.json();sss
         pokemon(data); 
         Resources(data);
     } catch (error) {
@@ -39,13 +39,6 @@ function Resources(data){
     NameOfPokemon(data);
     Abilities(data);
     TypeofPokemon(data);
-    //Height
-    // const Height = document.querySelector('.Height');
-    // Height.style.display = 'block';
-
-    // const HeightData = data.height;
-    // const HeightPokemon = document.querySelector('.HeightPokemon');
-    // HeightPokemon.textContent = HeightData;
 }
 
 function NameOfPokemon(data){
