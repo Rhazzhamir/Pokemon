@@ -79,4 +79,3 @@ function TypeofPokemon(data){
         typeElement2.textContent = firstType2
     
 }
-//rhazz
