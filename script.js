@@ -12,7 +12,7 @@ btnfetch.addEventListener('click', async function() {
         Resources(data);
     } catch (error) {
         const errorInput = document.querySelector('.errorInput');
-        errorInput.textContent = error.message; // Use error.message to get the error description
+        errorInput.textContent = error.message; 
         errorInput.style.display = 'block';
         errorInput.style.color = 'red';
     }
